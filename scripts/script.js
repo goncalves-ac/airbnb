@@ -2,7 +2,7 @@ let propertiesList;
 let selectedPrice = 0;
 
 function getProperties() {
-    fetch('https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72', { method: 'get' })
+    fetch('https://dry-cliffs-94979.herokuapp.com/', { method: 'get' })
         .then(res => {
             res.json().then((data) => {
                 loadProperties(data);
